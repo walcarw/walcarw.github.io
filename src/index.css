@@ -1,3 +1,78 @@
 h1{
   font-size: 70px;
 }
+
+h3{
+  text-align: center;
+  margin: 2px;
+}
+
+li{
+  cursor: pointer;
+}
+
+li:hover{
+  color: rgb(200, 200, 200);
+}
+
+.main-container{
+  margin: 50px;
+  text-align: center;
+}
+
+.nav-button{
+  border: 0px;
+  margin: 3px;
+  min-width: 150px;
+  font-size: 25px;
+}
+
+.nav-button:hover{
+  color: hsla(187, 20%, 42%, 0.654);
+}
+
+.card{
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.109);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 250px;
+  display: inline-block;
+}
+
+.card:hover{
+  border: 1px solid rgb(69, 97, 239);
+}
+
+.card .card-img{
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card .card-title{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: hsl(0, 0%, 20%);
+}
+
+.card .card-description{
+  font-family: Arial, Helvetica, sans-serif;
+  color: hsl(0, 0%, 30%);
+}
+
+.subject-display{
+  display: flex;
+}
+
+.subject-nav{
+  border: 1px solid black;
+  min-width: 175px;
+  text-align: left;
+  font-size: 25px;
+  padding: 10px;
+  margin: 10px;
+}
+
