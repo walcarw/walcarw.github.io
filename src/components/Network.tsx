@@ -8,6 +8,7 @@ import Dns from "./network/Dns";
 import Icmp from "./network/Icmp";
 import Ip from "./network/Ip";
 import Nat from "./network/Nat";
+import Overview from "./network/Overview";
 
 function Network(){
 
@@ -20,7 +21,7 @@ function Network(){
                 <nav className="subject-nav">
                     <h3>Basics</h3>
                     <ul>
-                        <li>Types</li>
+                        <li onClick={() => setSelected(<Overview/>)}>Overview</li>
                         <li onClick={() => setSelected(<Hardware/>)}>Hardware</li>
                         <li onClick={() => setSelected(<Models/>)}>TCP/IP & OSI</li>
                     </ul>

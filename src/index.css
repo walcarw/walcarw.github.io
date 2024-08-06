@@ -4,6 +4,7 @@ h1{
 
 h3{
   text-align: center;
+  font-size: 1.5em;
   margin: 2px;
 }
 
@@ -15,6 +16,13 @@ li:hover{
   color: rgb(200, 200, 200);
 }
 
+table, th, td {
+  border: 1px solid black;
+}
+
+td {
+  padding: 0.5em;
+}
 .main-container{
   margin: 50px;
   text-align: center;
@@ -76,3 +84,22 @@ li:hover{
   margin: 10px;
 }
 
+.type-column{
+  width: auto;
+  padding: 1em;
+}
+
+.meaning-column{
+  width: 20%;
+  padding: 1em;
+}
+
+.coverage-column{
+  width: 15%;
+  padding: 1em;
+}
+
+.tech-column{
+  width: 10%;
+  padding: 1em;
+}

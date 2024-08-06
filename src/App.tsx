@@ -12,11 +12,11 @@ function App(){
         <div className="main-container">
             <h1>IT Cheatsheets</h1>
             <nav>
-                <button className="nav-button">Algorithms</button>
                 <button className="nav-button">Hardware</button>
                 <button className="nav-button">Languages</button>
                 <button className="nav-button">Linux</button>
                 <button className="nav-button" onClick={() => setSubject(<Network/>)}>Network</button>
+                <button className="nav-button">Software</button>
                 <button className="nav-button">Windows Server</button>
             </nav>
             {subject}

@@ -9,6 +9,7 @@ function NetworkCard(){
             <Card img="" title="Hardware" description="Notes about network hardware"/>
             <Card img="" title="ICMP" description="Notes about the ICMP protocol"/>
             <Card img="" title="IP" description="Notes about the IP protocol"/>
+            <Card img="" title="Overview" description="Notes about the Basic Concepts of Computer Networking"/>
             <Card img="" title="TCP/IP & OSI" description="Notes about TCP/IP & OSI Models"/>
             <Card img="" title="NAT" description="Notes about the NAT protocol"/>
         </div>
