@@ -8,6 +8,11 @@ h3{
   margin: 2px;
 }
 
+h4{
+  padding: 0px;
+  margin: 0px;
+}
+
 li{
   cursor: pointer;
 }
@@ -20,7 +25,7 @@ table, th, td {
   border: 1px solid black;
 }
 
-td {
+td, th {
   padding: 0.5em;
 }
 .main-container{
@@ -86,20 +91,16 @@ td {
 
 .type-column{
   width: auto;
-  padding: 1em;
 }
 
 .meaning-column{
   width: 20%;
-  padding: 1em;
 }
 
 .coverage-column{
   width: 15%;
-  padding: 1em;
 }
 
 .tech-column{
   width: 10%;
-  padding: 1em;
 }
