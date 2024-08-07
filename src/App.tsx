@@ -1,5 +1,10 @@
 import { useState } from "react";
-import Network from "./components/Network";
+import Network from "./components/network/Network";
+import Hardware from "./components/hardware/Hardware";
+import Languages from "./components/languages/Languages";
+import Linux from "./components/linux/Linux";
+import Software from "./components/software/Software";
+import Winserv from "./components/winserv/Winserv";
 
 
 
@@ -12,12 +17,12 @@ function App(){
         <div className="main-container">
             <h1>IT Cheatsheets</h1>
             <nav>
-                <button className="nav-button">Hardware</button>
-                <button className="nav-button">Languages</button>
-                <button className="nav-button">Linux</button>
+                <button className="nav-button" onClick={() => setSubject(<Hardware/>)}>Hardware</button>
+                <button className="nav-button" onClick={() => setSubject(<Languages/>)}>Languages</button>
+                <button className="nav-button" onClick={() => setSubject(<Linux/>)}>Linux</button>
                 <button className="nav-button" onClick={() => setSubject(<Network/>)}>Network</button>
-                <button className="nav-button">Software</button>
-                <button className="nav-button">Windows Server</button>
+                <button className="nav-button" onClick={() => setSubject(<Software/>)}>Software</button>
+                <button className="nav-button" onClick={() => setSubject(<Winserv/>)}>Windows Server</button>
             </nav>
             {subject}
         </div>

@@ -42,6 +42,7 @@ td, th {
   margin: 3px;
   min-width: 150px;
   font-size: 25px;
+  cursor: pointer;
 }
 
 .nav-button:hover{
@@ -56,7 +57,11 @@ td, th {
   margin: 10px;
   text-align: center;
   max-width: 250px;
+  min-width: 250px;
+  max-height: 250px;
+  min-height: 250px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .card:hover{
@@ -64,8 +69,8 @@ td, th {
 }
 
 .card .card-img{
-  max-width: 60%;
-  height: auto;
+  max-width: 150px;
+  max-height: 150px;
   margin-bottom: 10px;
 }
 
