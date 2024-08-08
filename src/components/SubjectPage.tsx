@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Cardview from "./Cardview";
+import { Empty } from "./Empty";
 
 export interface Data{
     title: string,
@@ -8,7 +9,9 @@ export interface Data{
 
 function SubjectPage(props: Data){
 
-    const [selected, setSelected] = useState<JSX.Element>(<Cardview subjects={props.subjects}/>);
+    const [selected, setSelected] = useState<JSX.Element>(<Empty/>);
+
+    useEffect(() => {setSelected(<Cardview subjects={props.subjects} setter={setSelected}/>)}, [])
 
     return(
         <div>
