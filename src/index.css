@@ -17,11 +17,10 @@ ul{
   text-align: left;
 }
 
-li{
+.list-click{
   cursor: pointer;
 }
-
-li:hover{
+.list-click:hover{
   color: rgb(200, 200, 200);
 }
 

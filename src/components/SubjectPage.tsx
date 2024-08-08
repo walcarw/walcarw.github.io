@@ -19,7 +19,7 @@ function SubjectPage(props: Data){
             <div className="subject-display">
                 <nav className="subject-nav">
                     <ul>
-                        {props.subjects.map(x => <li key={x.name} onClick={() => setSelected(x.component)}>{x.name}</li>)}
+                        {props.subjects.map(x => <li className="list-click" key={x.name} onClick={() => setSelected(x.component)}>{x.name}</li>)}
                     </ul>
                 </nav>
                 <div>
