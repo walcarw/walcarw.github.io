@@ -17,6 +17,10 @@ ul{
   text-align: left;
 }
 
+ol{
+  text-align: left;
+}
+
 .list-click{
   cursor: pointer;
 }
@@ -115,4 +119,18 @@ td, th {
 
 .ip-img{
   width: 100%;
+}
+
+.command-line{
+  border: 1px solid black;
+  text-align: left;
+  padding: 5px;
+  margin: 5px;
+}
+
+.code{
+  border: 1px solid black;
+  text-align: left;
+  padding: 5px;
+  margin: 5px;
 }
