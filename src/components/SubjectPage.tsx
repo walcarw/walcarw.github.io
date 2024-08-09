@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Cardview from "./Cardview";
+import Cardview from "./display/Cardview";
 import { Empty } from "./Empty";
 
 export interface Data{

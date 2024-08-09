@@ -1,3 +1,6 @@
+import CommandDisplay from "../display/CommandDisplay";
+import ConfigDisplay from "../display/ConfigDisplay";
+
 function Samba(){
     return(
         <div>
@@ -9,49 +12,43 @@ function Samba(){
 
             <h3>Installation (Ubuntu)</h3>
             <ol>
-                <li>To install Samba, use the command 
-                    <div className="command-line">$ sudo apt install samba</div>
-                </li>
-                <li>Create the directory that will contain the files to be shared:
-                    <div className="command-line">$ mkdir /home/&lt;username&gt;/sambashare/</div>
+                <li>
+                    To install Samba, use the command
+                    <CommandDisplay command="sudo apt install samba"/>
                 </li>
                 <li>
-                    Edit the samba configuration file located in 
-                    <div className="command-line">/etc/samba/smb.conf</div>
+                    Create the directory that will contain the files to be shared:
+                    <CommandDisplay command="mkdir /home/<username>/sambashare/"/>
+                </li>
+                <li>
+                    Edit the samba configuration file
+                    <CommandDisplay command="sudo nano /etc/samba/smb.conf"/>
                     Add the following to the file
-                    <div className="code">
-                        <p>
-                            [sambashare]<br/>
-                            &emsp;comment = Samba on Ubuntu<br/>
-                            &emsp;path = home/&lt;username&gt;/sambashare<br/>
-                            &emsp;read only = no <br/>
-                            &emsp;browsable = yes.
-                        </p>
-                    </div>
+                    <ConfigDisplay config="[sambashare]
+   comment = Samba on Ubuntu
+   path = home/<username>/sambashare
+   read only = no
+   browsable = yes"/>
                 </li>
                 <li>Restart the Samba service
-                    <div className="command-line">$ sudo service smbd restart</div>
+                    <CommandDisplay command="sudo service smbd restart"/>
                 </li>
                 <li>Update firewall rule
-                    <div className="command-line">$ sudo ufw allow samba</div>
+                    <CommandDisplay command="sudo ufw allow samba"/>
                 </li>
                 <li>Set a password for users
-                    <div className="command-line">$ sudo smbpasswd -a &lt;username&gt;</div>
+                    <CommandDisplay command="sudo smbpasswd -a <username>"/>
                 </li>
                 <li>
                     Access the folder
                     <ul>
                         <li>
-                            Linux
-                            <div className="command-line">smb://&lt;ip-address&gt;/sambashare</div>
-                        </li>
-                        <li>
-                            macOS
-                            <div className="command-line">smb://&lt;ip-address&gt;/sambashare</div>
+                            Linux & macOS
+                            <ConfigDisplay config="smb://<ip-address>/sambashare"/>
                         </li>
                         <li>
                             Windows
-                            <div className="command-line">\\&lt;ip-address&gt;\sambashare</div>
+                            <ConfigDisplay config="\\<ip-address>\sambashare"/>
                         </li>
                     </ul>
                 </li>

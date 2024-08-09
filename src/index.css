@@ -134,3 +134,17 @@ td, th {
   padding: 5px;
   margin: 5px;
 }
+
+.command-displayer{
+  border: 1px solid black;
+  text-align: left;
+  padding: 5px;
+  margin: 5px;
+}
+
+.config-displayer{
+  border: 1px solid black;
+  text-align: left;
+  padding: 5px;
+  margin: 5px;
+}
