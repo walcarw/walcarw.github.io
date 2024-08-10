@@ -1,7 +1,7 @@
 function DhcpServer(){
     return(
-        <div>
-            <h2>DHCP Server Cheatsheet</h2>
+        <div className="topic-container">
+            <h2 className="topic-title" >DHCP Server Cheatsheet</h2>
         </div>
     );
 }

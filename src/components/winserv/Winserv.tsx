@@ -7,10 +7,10 @@ import DnsServer from "./Dns_server";
 
 function Winserv(){
     const data = [
-        {name: "Active Directory", desc: "Notes about the Active Directory", img: default_img, component: <ActiveDirectory/>},
-        {name: "Roles", desc: "Notes about Roles", img: default_img, component: <Roles/>},
-        {name: "DHCP Server", desc: "Notes about DHCP Server", img: default_img, component: <DhcpServer/>},
-        {name: "DNS Server", desc: "Notes about DNS Server", img: default_img, component: <DnsServer/>},
+        {name: "Active Directory", img: default_img, component: <ActiveDirectory/>},
+        {name: "Roles", img: default_img, component: <Roles/>},
+        {name: "DHCP Server", img: default_img, component: <DhcpServer/>},
+        {name: "DNS Server", img: default_img, component: <DnsServer/>},
     ]
     return(
         <div>

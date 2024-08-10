@@ -1,7 +1,7 @@
 function Python(){
     return(
-        <div>
-            <h2>Python CheatSheet</h2>
+        <div className="topic-container" >
+            <h2 className="topic-title">Python CheatSheet</h2>
         </div>
     );
 }

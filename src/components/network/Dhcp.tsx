@@ -1,8 +1,8 @@
 function Dhcp(){
     return(
-        <div>
-            <h2>DHCP : Dynamic Host Configuration Protocol</h2>
-            <h3>Overview</h3>
+        <div className="topic-container" >
+            <h2 className="topic-title">DHCP : Dynamic Host Configuration Protocol</h2>
+            <h3 className="topic-subtitle">Overview</h3>
             <ul>
                 <li>GOAL : Automatically gives IP addresses to hosts</li>
                 <li>Uses the client-server architecture. The host send a request to a DHCP server and the server respond</li>
@@ -47,50 +47,50 @@ function Dhcp(){
                         </li>
                         <li>
                             Messages used
-                            <table>
+                            <table className="basic-table">
                                 <tr>
-                                    <th>Message</th>
-                                    <th>Use case</th>
+                                    <th className="basic-th dhcp-message-th">Message</th>
+                                    <th className="basic-th">Use case</th>
                                 </tr>
 
-                                <tr>
-                                    <td>DHCPDISCOVER</td>
-                                    <td>Sent when the client want to contact a DHCP server</td>
+                                <tr className="basic-tr">
+                                    <td className="basic-td">DHCPDISCOVER</td>
+                                    <td className="basic-td">Sent when the client want to contact a DHCP server</td>
                                 </tr>
 
-                                <tr>
-                                    <td>DHCPOFFER</td>
-                                    <td>Sent when the server propose an IP address to the client</td>
+                                <tr className="basic-tr">
+                                    <td className="basic-td">DHCPOFFER</td>
+                                    <td className="basic-td">Sent when the server propose an IP address to the client</td>
                                 </tr>
 
-                                <tr>
-                                    <td>DHCPREQUEST</td>
-                                    <td>Sent when the client request the proposed IP address</td>
+                                <tr className="basic-tr">
+                                    <td className="basic-td">DHCPREQUEST</td>
+                                    <td className="basic-td">Sent when the client request the proposed IP address</td>
                                 </tr>
 
-                                <tr>
-                                    <td>DHCPACK</td>
-                                    <td>Sent when the server confirm the allocation of the IP address</td>
+                                <tr className="basic-tr">
+                                    <td className="basic-td">DHCPACK</td>
+                                    <td className="basic-td">Sent when the server confirm the allocation of the IP address</td>
                                 </tr>
 
-                                <tr>
-                                    <td>DHCPNACK</td>
-                                    <td>Negative acknoledgement</td>
+                                <tr className="basic-tr">
+                                    <td className="basic-td">DHCPNACK</td>
+                                    <td className="basic-td">Negative acknoledgement</td>
                                 </tr>
 
-                                <tr>
-                                    <td>DHCPDECLINE</td>
-                                    <td>Sent when the client decline an IP address offer</td>
+                                <tr className="basic-tr">
+                                    <td className="basic-td">DHCPDECLINE</td>
+                                    <td className="basic-td">Sent when the client decline an IP address offer</td>
                                 </tr>
 
-                                <tr>
-                                    <td>DHCPRELEASE</td>
-                                    <td>Sent when the client want to signal the server to release the IP address</td>
+                                <tr className="basic-tr">
+                                    <td className="basic-td">DHCPRELEASE</td>
+                                    <td className="basic-td">Sent when the client want to signal the server to release the IP address</td>
                                 </tr>
 
-                                <tr>
-                                    <td>DHCPINFORM</td>
-                                    <td>Sent when the client want to inform the server that its IP address was set manually</td>
+                                <tr className="basic-tr">
+                                    <td className="basic-td">DHCPINFORM</td>
+                                    <td className="basic-td">Sent when the client want to inform the server that its IP address was set manually</td>
                                 </tr>
                             </table>
                         </li>
@@ -98,7 +98,7 @@ function Dhcp(){
                 </li>
             </ul>
 
-            <h3>Scenarios</h3>
+            <h3 className="topic-subtitle">Scenarios</h3>
             <ul>
                 <li>
                     A Host want to receive an IP address 

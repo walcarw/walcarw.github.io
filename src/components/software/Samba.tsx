@@ -3,14 +3,14 @@ import ConfigDisplay from "../display/ConfigDisplay";
 
 function Samba(){
     return(
-        <div>
-            <h2>Samba CheatSheet</h2>
-            <h3>Overview</h3>
+        <div className="topic-container">
+            <h2 className="topic-title">Samba CheatSheet</h2>
+            <h3 className="topic-subtitle">Overview</h3>
             <p>
                 Samba is a linux software that allows to share files with Windows and macOS computer.
             </p>
 
-            <h3>Installation (Ubuntu)</h3>
+            <h3 className="topic-subtitle">Installation (Ubuntu)</h3>
             <ol>
                 <li>
                     To install Samba, use the command
@@ -54,36 +54,36 @@ function Samba(){
                 </li>
             </ol>
 
-            <h3>Parameters</h3>
-            <table>
+            <h3 className="topic-subtitle">Parameters</h3>
+            <table className="basic-table">
                 <tr>
-                    <th>Parameter</th>
-                    <th>Value</th>
-                    <th>Description</th>
+                    <th className="basic-th samba-th">Parameter</th>
+                    <th className="basic-th samba-th">Value</th>
+                    <th className="basic-th">Description</th>
                 </tr>
 
-                <tr>
-                    <td>comment</td>
-                    <td>text</td>
-                    <td>A brief description of the shared folder</td>
+                <tr className="basic-tr">
+                    <td className="basic-td">comment</td>
+                    <td className="basic-td">text</td>
+                    <td className="basic-td">A brief description of the shared folder</td>
                 </tr>
 
-                <tr>
-                    <td>path</td>
-                    <td>path to a folder</td>
-                    <td>The path to shared directory</td>
+                <tr className="basic-tr">
+                    <td className="basic-td">path</td>
+                    <td className="basic-td">path to a folder</td>
+                    <td className="basic-td">The path to shared directory</td>
                 </tr>
 
-                <tr>
-                    <td>read only</td>
-                    <td>yes/no</td>
-                    <td>The permission to do modification in the folder</td>
+                <tr className="basic-tr">
+                    <td className="basic-td">read only</td>
+                    <td className="basic-td">yes/no</td>
+                    <td className="basic-td">The permission to do modification in the folder</td>
                 </tr>
 
-                <tr>
-                    <td>browsable</td>
-                    <td>yes/no</td>
-                    <td></td>
+                <tr className="basic-tr">
+                    <td className="basic-td">browsable</td>
+                    <td className="basic-td">yes/no</td>
+                    <td className="basic-td"></td>
                 </tr>
 
             </table>

@@ -1,15 +1,15 @@
 function Arp(){
     return(
-        <div>
-            <h2>ARP : Address Resolution Protocol</h2>
-            <h3>Overview</h3>
+        <div className="topic-container">
+            <h2 className="topic-title">ARP : Address Resolution Protocol</h2>
+            <h3 className="topic-subtitle">Overview</h3>
             <ul>
                 <li>GOAL : Get the MAC address given an IP address</li>
                 <li>The mapping IP address/MAC address are stored in an ARP cache table</li>
                 <li>The data in the table is in the form : (IP address, MAC address, Type)</li>
                 <li>A host only ask the MAC addresses of hosts in its LAN. If the receiver is on another LAN, the host send the message to the gateway and ask the MAC address of the gateway.</li>
             </ul>
-            <h3>Scenarios</h3>
+            <h3 className="topic-subtitle">Scenarios</h3>
             <ul>
                 <li>
                     The host A want to send a message M to the host B (same LAN)
@@ -31,7 +31,7 @@ function Arp(){
                     </ol>
                 </li>
             </ul>
-            <h3>Practice</h3>
+            <h3 className="topic-subtitle">Practice</h3>
             <ul>
                 <li>
                     Windows

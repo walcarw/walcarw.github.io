@@ -1,7 +1,7 @@
 function Roles(){
     return(
-        <div>
-            <h2>Roles Cheatsheet</h2>
+        <div className="topic-container">
+            <h2 className="topic-title">Roles Cheatsheet</h2>
         </div>
     );
 }

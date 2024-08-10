@@ -1,7 +1,7 @@
 function DnsServer(){
     return(
-        <div>
-            <h2>DNS Server Cheatsheet</h2>
+        <div className="topic-container">
+            <h2 className="topic-title">DNS Server Cheatsheet</h2>
         </div>
     );
 }

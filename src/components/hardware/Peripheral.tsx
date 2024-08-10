@@ -1,7 +1,7 @@
 function Peripheral(){
     return(
-        <div>
-            <h2>Peripherals CheatSheets</h2>
+        <div className="topic-container">
+            <h2 className="topic-title" >Peripherals CheatSheets</h2>
         </div>
     );
 }

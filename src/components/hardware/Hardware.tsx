@@ -7,10 +7,10 @@ import Peripheral from "./Peripheral";
 
 function Hardware(){
     const data = [
-        {name: "Computer", desc: "Notes about Computers", img: default_img, component: <Computer/>},
-        {name: "Monitor", desc: "Notes about Monitors", img: default_img, component: <Monitor/>},
-        {name: "Printer", desc: "Notes about Printers", img: default_img, component: <Printer/>},
-        {name: "Peripheral", desc: "Notes about Peripherals", img: default_img, component: <Peripheral/>},
+        {name: "Computer", img: default_img, component: <Computer/>},
+        {name: "Monitor", img: default_img, component: <Monitor/>},
+        {name: "Printer", img: default_img, component: <Printer/>},
+        {name: "Peripheral", img: default_img, component: <Peripheral/>},
     ]
     return(
         <div>

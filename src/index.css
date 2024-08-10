@@ -1,68 +1,102 @@
-h1{
-  font-size: 70px;
-}
-
-h3{
+body{
+  background-color: #1d2028;
+  color: rgb(225, 225, 225);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  font-size: 1.5em;
-  margin: 2px;
 }
 
-h4{
-  padding: 0px;
-  margin: 0px;
-}
 
-ul{
-  text-align: left;
-}
 
-ol{
-  text-align: left;
-}
 
-.list-click{
-  cursor: pointer;
-}
-.list-click:hover{
-  color: rgb(200, 200, 200);
-}
 
-table, th, td {
-  border: 1px solid black;
-}
-
-td, th {
-  padding: 0.5em;
-}
-.main-container{
-  margin: 50px;
-  text-align: center;
+/*
+  CSS for the file App.tsx
+*/
+#main-title{
+  font-size: 300%;
 }
 
 .nav-button{
   border: 0px;
-  margin: 3px;
-  min-width: 150px;
-  font-size: 25px;
+  box-shadow: 2px 2px rgba(215, 215, 255, 0.297);
+  padding: 0.5%;
+  margin: 0.5%;
+  min-width: 15%;
+  font-size: 200%;
   cursor: pointer;
+  background-color: rgb(222, 249, 255);
 }
 
 .nav-button:hover{
-  color: hsla(187, 20%, 42%, 0.654);
+  color: rgb(193, 193, 193);
+}
+
+
+
+
+
+/*
+  CSS for the file SubjectPage.tsx
+*/
+.subject-page{
+  margin: -1%;
+  padding: 1%;
+}
+
+.subject-title{
+  font-size: 200%;
+  text-decoration: underline;
+}
+
+.subject-display{
+  display:flex;
+}
+
+.subject-nav{
+  border: 1px solid white;
+  padding: 1vw;
+  margin: 1vw;
+  text-align: left;
+  font-size: 150%;
+  min-width: 15vw;
+  max-width: 15vw;
+}
+
+.subject-nav-click{
+  cursor: pointer;
+  margin: 2%;
+}
+
+.subject-nav-click:hover{
+  color: rgb(149, 173, 195);
+  text-decoration:underline;
+}
+
+
+
+
+
+/*
+  CSS for Cardview
+*/
+.cardview{
+  min-width: 75vw;
+  max-width: 75vw;
+  border: 1px solid aliceblue;
+  padding: 1vw;
+  margin: 1vw;
 }
 
 .card{
   border: 1px solid hsl(0, 0%, 80%);
   border-radius: 10px;
   box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.109);
-  padding: 20px;
-  margin: 10px;
+  padding: 1%;
+  margin: 1%;
   text-align: center;
   max-width: 250px;
   min-width: 250px;
-  max-height: 250px;
-  min-height: 250px;
+  height: 250px;
   display: inline-block;
   cursor: pointer;
 }
@@ -72,6 +106,8 @@ td, th {
 }
 
 .card .card-img{
+  min-width: 150px;
+  min-height: 150px;
   max-width: 150px;
   max-height: 150px;
   margin-bottom: 10px;
@@ -79,72 +115,149 @@ td, th {
 
 .card .card-title{
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  color: hsl(0, 0%, 20%);
+  margin: 5%;
+  color: hsl(0, 0%, 76%);
 }
 
-.card .card-description{
-  font-family: Arial, Helvetica, sans-serif;
-  color: hsl(0, 0%, 30%);
-}
 
-.subject-display{
-  display: flex;
-}
 
-.subject-nav{
-  border: 1px solid black;
-  min-width: 175px;
-  text-align: left;
-  font-size: 25px;
-  padding: 10px;
-  margin: 10px;
-}
 
-.type-column{
-  width: auto;
-}
 
-.meaning-column{
-  width: 20%;
-}
-
-.coverage-column{
-  width: 15%;
-}
-
-.tech-column{
-  width: 10%;
-}
-
-.ip-img{
-  width: 100%;
-}
-
-.command-line{
-  border: 1px solid black;
-  text-align: left;
-  padding: 5px;
-  margin: 5px;
-}
-
-.code{
-  border: 1px solid black;
-  text-align: left;
-  padding: 5px;
-  margin: 5px;
-}
-
+/*
+  CSS for the file CommandDisplayer.tsx
+*/
 .command-displayer{
-  border: 1px solid black;
-  text-align: left;
-  padding: 5px;
-  margin: 5px;
+  font-size: 1.5em;
+  background-color: rgb(58, 77, 84);
+  width: 50%;
+  padding-left: 5px;
 }
 
+
+
+
+
+/*
+  CSS for the file ConfigDisplay.tsx
+*/
 .config-displayer{
-  border: 1px solid black;
+  font-size: 1.5em;
+  background-color: rgb(68, 70, 71);
+  width: 50%;
+}
+
+
+
+
+
+/*
+  CSS for topic 
+*/
+.topic-container{
+  min-width: 75vw;
+  max-width: 75vw;
+  border: 1px solid aliceblue;
+  padding: 1vw;
+  margin: 1vw;
   text-align: left;
-  padding: 5px;
-  margin: 5px;
+}
+
+.topic-title{
+  font-size: 150%;
+  text-decoration: underline;
+}
+
+.topic-subtitle{
+  font-size: 125%;
+  text-decoration: dashed underline;
+  text-underline-offset: 0.5rem;
+}
+
+.topic-subsubtitle{
+  font-size: 100%;
+  text-decoration: dotted underline;
+  text-underline-offset: 0.5rem;
+}
+
+.max-width-img{
+  max-width: 100%;
+}
+
+.basic-table{
+  padding: 1%;
+  color:rgb(38, 110, 170);
+}
+
+.basic-th{
+  border: 1px solid rgb(169, 169, 169);
+  padding: 1%;
+  text-align: center;
+  background-color:rgb(66, 64, 64);
+}
+
+.empty-th{
+  padding: 1vw;
+}
+
+.empty-td{
+  background-color: #1d2028;
+}
+
+.basic-td{
+  padding: 0.5%;
+}
+
+.basic-tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+.basic-tr:nth-child(odd){
+  background-color: #aaaaaa;
+}
+
+/*
+  Fix manually the width of table column
+*/
+.overview-type-th{
+  min-width: 5vw;
+}
+
+.models-layer-th{
+  min-width: 11vw;
+}
+
+.models-protocols-th{
+  min-width: 10vw;
+}
+
+.hardware-fixed-th{
+  min-width: 10vw;
+}
+
+.icmp-type-th{
+  min-width: 5vw;
+}
+
+.icmp-desc-th{
+  min-width: 15vw;
+}
+
+.dns-type-th{
+  min-width: 5vw;
+}
+
+.dns-desc-th{
+  min-width: 10vw;
+}
+
+.dhcp-message-th{
+  min-width: 10vw;
+}
+
+.ip-subnets-th{
+  min-width: 15vw;
+}
+
+.samba-th{
+  min-width: 10vw;
 }

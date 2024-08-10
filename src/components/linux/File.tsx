@@ -1,7 +1,7 @@
 function File(){
     return(
-        <div>
-            <h2>Files Cheatsheet</h2>
+        <div className="topic-container">
+            <h2 className="topic-title">Files Cheatsheet</h2>
         </div>
     );
 }

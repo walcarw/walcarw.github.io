@@ -6,9 +6,9 @@ import Process from "./Process";
 
 function Linux(){
     const data = [
-        {name: "Users & Groups", desc: "Notes about Users & Groups", img: default_img, component: <User/>},
-        {name: "Files", desc: "Notes about Files", img: default_img, component: <File/>},
-        {name: "Processes", desc: "Notes about Processes", img: default_img, component: <Process/>},
+        {name: "Users & Groups", img: default_img, component: <User/>},
+        {name: "Files", img: default_img, component: <File/>},
+        {name: "Processes", img: default_img, component: <Process/>},
     ]
     return(
         <div>

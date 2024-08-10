@@ -15,7 +15,7 @@ function App(){
 
     return(
         <div className="main-container">
-            <h1>IT Cheatsheets</h1>
+            <h1 id="main-title">IT Cheatsheets</h1>
             <nav>
                 <button className="nav-button" onClick={() => setSubject(<Hardware/>)}>Hardware</button>
                 <button className="nav-button" onClick={() => setSubject(<Languages/>)}>Languages</button>
@@ -24,6 +24,7 @@ function App(){
                 <button className="nav-button" onClick={() => setSubject(<Software/>)}>Software</button>
                 <button className="nav-button" onClick={() => setSubject(<Winserv/>)}>Windows Server</button>
             </nav>
+            <hr/>
             {subject}
         </div>
     );

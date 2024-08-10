@@ -1,7 +1,7 @@
 function Java(){
     return(
-        <div>
-            <h2>Java CheatSheet</h2>
+        <div className="topic-container">
+            <h2 className="topic-title">Java CheatSheet</h2>
         </div>
     );
 }

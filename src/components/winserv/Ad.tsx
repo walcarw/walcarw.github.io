@@ -1,7 +1,7 @@
 function ActiveDirectory(){
     return(
-        <div>
-            <h2>Active Directory Cheatsheet</h2>
+        <div className="topic-container">
+            <h2 className="topic-title">Active Directory Cheatsheet</h2>
         </div>
     );
 }

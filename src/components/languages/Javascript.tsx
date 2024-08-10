@@ -1,7 +1,7 @@
 function Javascript(){
     return(
-        <div>
-            <h2>Javascript CheatSheet</h2>
+        <div className="topic-container">
+            <h2 className="topic-title">Javascript CheatSheet</h2>
         </div>
     );
 }

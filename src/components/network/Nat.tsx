@@ -1,8 +1,8 @@
 function Nat(){
     return(
-        <div>
-            <h2>NAT : Network Address Translation</h2>
-            <h3>Overview</h3>
+        <div className="topic-container">
+            <h2 className="topic-title">NAT : Network Address Translation</h2>
+            <h3 className="topic-subtitle">Overview</h3>
             <ul>
                 <li>Goal : gives one IPv4 address to a local network. Devices in the local network have private IPv4 addresses and the router of the local network have one public IPv4 address.</li>
                 <li>

@@ -1,7 +1,7 @@
 function Monitor(){
     return(
-        <div>
-            <h2>Monitors CheatSheets</h2>
+        <div className="topic-container">
+            <h2 className="topic-title">Monitors CheatSheets</h2>
         </div>
     );
 }

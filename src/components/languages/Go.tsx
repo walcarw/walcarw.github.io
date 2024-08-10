@@ -1,7 +1,7 @@
 function Go(){
     return(
-        <div>
-            <h2>Go CheatSheet</h2>
+        <div className="topic-container" >
+            <h2 className="topic-title">Go CheatSheet</h2>
         </div>
     );
 }
