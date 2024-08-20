@@ -149,6 +149,34 @@ body{
 
 
 
+/*
+  CSS for the file CodeDisplay.tsx
+*/
+.code-displayer{
+  margin: 1%;
+  padding: 2%;
+  background-color:rgb(79, 75, 92);
+  color: white;
+  font-size: 1.2em;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+}
+
+.keyword{
+  color: rgb(218, 113, 0);
+}
+
+.datatype{
+  color: rgb(124, 124, 239);
+}
+
+.placeholder{
+  color: aqua;
+}
+
+
+
+
 
 /*
   CSS for topic 
@@ -204,7 +232,7 @@ body{
 }
 
 .basic-td{
-  padding: 0.5%;
+  padding: 3%;
 }
 
 .basic-tr:nth-child(even){
@@ -260,4 +288,16 @@ body{
 
 .samba-th{
   min-width: 10vw;
+}
+
+
+
+
+
+/*
+  CSS for Languages files
+*/
+
+.lang-container{
+  display: flex;
 }
